@@ -23,10 +23,10 @@ const Navbar = () => {
                     <img
                         src={logo}
                         alt="logo"
-                        className="w-9 h-9 object-contain"
+                        className="w-9 h-9 object-contain rounded-xl mr-3"
                     />
                     <p className="text-white text-[18px] font-bold cursor-pointer">
-                        정하승{" "}
+                        정하승
                         <span className="sm:block hidden">JavaScript</span>
                     </p>
                 </Link>
