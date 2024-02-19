@@ -30,6 +30,9 @@ import carrent from "./favicon.ico";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import aboutme from "./aboutme.png";
+import nextlogo from "./nextlogo.png";
+
 export {
     logo,
     backend,
@@ -58,5 +61,7 @@ export {
     tesla,
     carrent,
     jobit,
-    tripguide
+    tripguide,
+    aboutme,
+    nextlogo
 };
