@@ -42,10 +42,6 @@ export const navLinks = [
 
 const services = [
     {
-        title: "Web Developer",
-        icon: web
-    },
-    {
         title: "Frontend Developer",
         icon: javascript
     },
@@ -112,16 +108,16 @@ const technologies = [
 
 const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
+        title: "애자일그로스",
+        company_name: "프론트엔드",
         icon: starbucks,
         iconBg: "#383E56",
-        date: "March 2020 - April 2021",
+        date: "August 2023 - January 2024",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers."
+            "기존 인라인 스타일이 적용되어있던 부분을 가독성 향상을 위해 컴포넌트 단위의 네이밍 적용",
+            "API 처리 과정에서 Toast 컴포넌트를 활용함으로써 사용자 경험 개선",
+            "video 객체를 다루면서 겪은 경험에 대해 기록",
+            "Recoil을 사용하면서 겪었던 이슈를 jotai로 바꾸면서 얻은 경험에 대해 기록"
         ]
     }
 ];
@@ -155,67 +151,31 @@ const testimonials = [
 
 const projects = [
     {
-        name: "Car Rent",
-        description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        name: "Swap()",
+        description: `음악, 드라마 그리고 영화 등의 K-Culture가 전 세계적으로 인기를 끌며, 흔히 말하는 ‘덕질문화’ 속
+						'수집'은 팬들의 하나의 취미로 자리잡았다. 사회적으로 취미 중심 커뮤니티가 활성화되고 이에 대한
+						중고거래의 빈도가늘어나는 현시대의 트렌드와 팬들의 수집문화를 결합하여, 서로가 좋아하고
+						관심 있어하는 분야를 공유하고 서로 교환하는 하나의 플랫폼인 swap( )이 탄생하게 되었다.`,
         tags: [
             {
-                name: "react",
+                name: "React",
                 color: "blue-text-gradient"
             },
             {
-                name: "mongodb",
+                name: "TypeScript",
                 color: "green-text-gradient"
             },
             {
-                name: "tailwind",
+                name: "styled-components",
                 color: "pink-text-gradient"
+            },
+            {
+                name: "Recoil",
+                color: "green-text-gradient"
             }
         ],
         image: carrent,
-        source_code_link: "https://github.com/"
-    },
-    {
-        name: "Job IT",
-        description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient"
-            },
-            {
-                name: "restapi",
-                color: "green-text-gradient"
-            },
-            {
-                name: "scss",
-                color: "pink-text-gradient"
-            }
-        ],
-        image: jobit,
-        source_code_link: "https://github.com/"
-    },
-    {
-        name: "Trip Guide",
-        description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-        tags: [
-            {
-                name: "nextjs",
-                color: "blue-text-gradient"
-            },
-            {
-                name: "supabase",
-                color: "green-text-gradient"
-            },
-            {
-                name: "css",
-                color: "pink-text-gradient"
-            }
-        ],
-        image: tripguide,
-        source_code_link: "https://github.com/"
+        source_code_link: "https://github.com/project-swap/swap"
     }
 ];
 
