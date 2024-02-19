@@ -22,14 +22,12 @@ import {
     carrent,
     jobit,
     tripguide,
-    threejs
+    threejs,
+    aboutme,
+    nextlogo
 } from "../assets";
 
 export const navLinks = [
-    {
-        id: "#about",
-        title: "About"
-    },
     {
         id: "#work",
         title: "Work"
@@ -152,10 +150,8 @@ const testimonials = [
 const projects = [
     {
         name: "Swap()",
-        description: `음악, 드라마 그리고 영화 등의 K-Culture가 전 세계적으로 인기를 끌며, 흔히 말하는 ‘덕질문화’ 속
-						'수집'은 팬들의 하나의 취미로 자리잡았다. 사회적으로 취미 중심 커뮤니티가 활성화되고 이에 대한
-						중고거래의 빈도가늘어나는 현시대의 트렌드와 팬들의 수집문화를 결합하여, 서로가 좋아하고
-						관심 있어하는 분야를 공유하고 서로 교환하는 하나의 플랫폼인 swap( )이 탄생하게 되었다.`,
+        description:
+            "트위터, 인스타그램 등의 sns를 하다보면 자신이 원하는 랜덤굿즈를 다른 사람이 소장하고 있거나 해당 굿즈를 다른 굿즈와 교환하고자 하는 경우를 볼 수 있습니다. 프리미엄을 주고 구매하는 등 다른 방법을 통해 얻을 수도 있겠지만, 물물교환의 방식을 통해 굿즈 자체의 가치만을 존중하는 서로 win-win이 될 수 있는 서비스를 한번 만들고 싶어서 swap( )이라는 프로젝트를 기획하게 되었습니다.",
         tags: [
             {
                 name: "React",
@@ -176,7 +172,48 @@ const projects = [
         ],
         image: carrent,
         source_code_link: "https://github.com/project-swap/swap"
+    },
+    {
+        name: "About me",
+        description:
+            "테오의 스프린트를 통해 5일 동안 기획 및 디자인, 개발과 배포까지 진행한 프로젝트입니다.",
+        tags: [
+            {
+                name: "React",
+                color: "blue-text-gradient"
+            },
+            {
+                name: "TypeScript",
+                color: "green-text-gradient"
+            },
+            {
+                name: "styled-components",
+                color: "pink-text-gradient"
+            },
+            {
+                name: "Recoil",
+                color: "green-text-gradient"
+            }
+        ],
+        image: aboutme,
+        source_code_link: "https://github.com/taeo-sprint16/frontend"
     }
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const opensource = [
+    {
+        name: "Nextjs.kr 한글 번역 기여",
+        link: "https://morethan-haseung-log.vercel.app/%20nextjs-kr",
+        description: "첫 오픈소스 기여 경험을 블로그로 작성하였습니다.",
+        image: nextlogo
+    }
+];
+
+export {
+    services,
+    technologies,
+    experiences,
+    testimonials,
+    projects,
+    opensource
+};
