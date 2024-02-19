@@ -77,8 +77,7 @@ const Contact = () => {
                 variants={slideIn("left", "tween", 0.2, 1)}
                 className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
             >
-                <p className={styles.sectionSubText}>Get in touch</p>
-                <h3 className={styles.sectionHeadText}>Contact.</h3>
+                <h3 className={styles.sectionHeadText}>연락하기</h3>
 
                 <form
                     ref={formRef}
@@ -87,47 +86,47 @@ const Contact = () => {
                 >
                     <label className="flex flex-col">
                         <span className="text-white font-medium mb-4">
-                            Your Name
+                            이름
                         </span>
                         <input
                             type="text"
                             name="name"
                             value={form.name}
                             onChange={handleChange}
-                            placeholder="What's your good name?"
+                            placeholder="이름을 입력해 주세요."
                             className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
                         />
                     </label>
                     <label className="flex flex-col">
                         <span className="text-white font-medium mb-4">
-                            Your email
+                            이메일 주소
                         </span>
                         <input
                             type="email"
                             name="email"
                             value={form.email}
                             onChange={handleChange}
-                            placeholder="What's your web address?"
+                            placeholder="이메일 주소를 입력해주세요."
                             className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
                         />
                     </label>
                     <label className="flex flex-col">
                         <span className="text-white font-medium mb-4">
-                            Your Message
+                            메시지
                         </span>
                         <textarea
                             rows={7}
                             name="message"
                             value={form.message}
                             onChange={handleChange}
-                            placeholder="What you want to say?"
+                            placeholder="메시지를 입력해 주세요."
                             className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
                         />
                     </label>
 
                     <button
                         type="submit"
-                        className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
+                        className="bg-[#915eff] px-8 py-3  rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
                     >
                         {loading ? "Sending..." : "Send"}
                     </button>
