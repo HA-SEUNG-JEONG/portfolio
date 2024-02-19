@@ -14,18 +14,16 @@ const Hero = () => {
                 </div>
                 <div>
                     <h1 className={`${styles.heroHeadText}`}>
-                        프론트엔드 개발자 <br />
+                        기록을 좋아하는 프론트엔드 개발자 <br />
                         <span className="text-[#915eff]">정하승입니다.</span>
                     </h1>
-                    <p
-                        className={`${styles.heroSubText} mt-2 text-white-100 text-sm leading-8`}
-                    >
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Culpa neque natus reprehenderit! Asperiores
-                        eligendi minus, exercitationem ipsum et eveniet eius
-                        dolores repellendus magni itaque labore inventore
-                        officiis corrupti delectus temporibus.
-                    </p>
+                    <h2 className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
+                        동영상 이미지 처리 서비스를 하는 애자일그로스에서
+                        프론트엔드 개발을 담당했습니다. 프로젝트를 진행 과정에서
+                        UX 개선을 위해 토스트 컴포넌트를 도입했습니다. 또한 회사
+                        프로젝트를 하면서 겪었던 문제 해결 경험과 개인 공부를
+                        하면서 느꼈던 경험을 블로그를 통해 기록하고 있습니다.{" "}
+                    </h2>
                 </div>
             </div>
             <ComputersCanvas />
