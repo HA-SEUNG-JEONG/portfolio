@@ -165,7 +165,7 @@ const projects = [
 const opensource = [
     {
         name: "Nextjs.kr 한글 번역 기여",
-        link: "https://morethan-haseung-log.vercel.app/%20nextjs-kr",
+        link: "https://morethan-haseung-log.vercel.app/nextjs-kr",
         description: "첫 오픈소스 기여 경험을 블로그로 작성하였습니다.",
         image: nextlogo
     }
