@@ -32,6 +32,7 @@ import tripguide from "./tripguide.png";
 
 import aboutme from "./aboutme.png";
 import nextlogo from "./nextlogo.png";
+import password from "./password.png";
 
 export {
     logo,
@@ -63,5 +64,6 @@ export {
     jobit,
     tripguide,
     aboutme,
-    nextlogo
+    nextlogo,
+    password
 };

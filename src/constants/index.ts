@@ -9,13 +9,23 @@ import {
     starbucks,
     carrent,
     aboutme,
-    nextlogo
+    nextlogo,
+    password
 } from "../assets";
 
 export const navLinks = [
     {
-        id: "#work",
-        title: "Work"
+        id: "#experience",
+        title: "Experience"
+    },
+
+    {
+        id: "#project",
+        title: "Project"
+    },
+    {
+        id: "#etc",
+        title: "Etc"
     },
     {
         id: "#contact",
@@ -72,7 +82,7 @@ const experiences = [
         company_name: "프론트엔드",
         icon: starbucks,
         iconBg: "#383E56",
-        date: "August 2023 - January 2024",
+        date: "August 2023 - Feburary 2024",
         points: [
             "기존 인라인 스타일이 적용되어있던 부분을 가독성 향상을 위해 컴포넌트 단위의 네이밍 적용",
             "API 처리 과정에서 Toast 컴포넌트를 활용함으로써 사용자 경험 개선",
@@ -158,6 +168,27 @@ const projects = [
             }
         ],
         image: aboutme,
+        source_code_link: "https://github.com/taeo-sprint16/frontend"
+    },
+    {
+        name: "랜덤 비밀번호 생성기",
+        description:
+            "개인 프로젝트로, range slider와 정규식 패턴을 이용하여 랜덤으로 비밀번호를 생성하는 도구를 만들었습니다.",
+        tags: [
+            {
+                name: "React",
+                color: "blue-text-gradient"
+            },
+            {
+                name: "TypeScript",
+                color: "green-text-gradient"
+            },
+            {
+                name: "Tailwindcss",
+                color: "pink-text-gradient"
+            }
+        ],
+        image: password,
         source_code_link: "https://github.com/taeo-sprint16/frontend"
     }
 ];
