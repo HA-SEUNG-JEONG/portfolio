@@ -24,7 +24,9 @@ const OpenSourceCard = ({
 }: OpenSourceProps) => {
     return (
         <>
-            <motion.div variants={fadeIn("up", "spring", index * 0.05, 0.75)}>
+            <motion.div
+                variants={fadeIn("bottom", "spring", index * 0.05, 0.75)}
+            >
                 <Tilt
                     options={{
                         max: 45,
@@ -85,4 +87,4 @@ const Etc = () => {
     );
 };
 
-export default SectionWrapper(Etc, "");
+export default SectionWrapper(Etc, "etc");

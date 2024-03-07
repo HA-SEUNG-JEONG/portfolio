@@ -37,10 +37,10 @@ const ProjectCard = ({
                     <img
                         src={image}
                         alt="project_image"
-                        className="w-full h-full object-cover rounded-2xl"
+                        className="w-full h-full object-contain rounded-3xl"
                     />
 
-                    <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+                    <div className="absolute inset-0 flex justify-end card-img_hover">
                         <div
                             onClick={() =>
                                 window.open(source_code_link, "_blank")
@@ -108,4 +108,4 @@ const Works = () => {
     );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "project");
