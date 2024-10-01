@@ -14,7 +14,7 @@ const Hero = () => {
                 </div>
                 <div>
                     <h1 className={`${styles.heroHeadText}`}>
-                        기록을 좋아하는 프론트엔드 개발자 <br />
+                        기록을 좋아하는 개발자 <br />
                         <span className="text-[#915eff]">정하승입니다.</span>
                     </h1>
                     <h2 className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">

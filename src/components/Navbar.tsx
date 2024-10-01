@@ -27,7 +27,6 @@ const Navbar = () => {
                     />
                     <p className="text-white text-[18px] font-bold cursor-pointer">
                         정하승
-                        <span className="sm:block hidden">JavaScript</span>
                     </p>
                 </Link>
                 <ul className="list-none hidden sm:flex flex-row gap-10">

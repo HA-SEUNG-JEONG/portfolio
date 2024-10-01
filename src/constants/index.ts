@@ -10,7 +10,8 @@ import {
     carrent,
     aboutme,
     nextlogo,
-    password
+    password,
+    blogThumbnail
 } from "../assets";
 
 export const navLinks = [
@@ -81,41 +82,26 @@ const experiences = [
         title: "애자일그로스",
         company_name: "프론트엔드",
         icon: starbucks,
-        iconBg: "#383E56",
-        date: "August 2023 - Feburary 2024",
+        iconBg: "#ffffff",
+        date: "2023.08 ~ 2024.01",
         points: [
             "기존 인라인 스타일이 적용되어있던 부분을 가독성 향상을 위해 컴포넌트 단위의 네이밍 적용",
             "API 처리 과정에서 Toast 컴포넌트를 활용함으로써 사용자 경험 개선",
             "video 객체를 다루면서 겪은 경험에 대해 기록",
             "Recoil을 사용하면서 겪었던 이슈를 jotai로 바꾸면서 얻은 경험에 대해 기록"
         ]
-    }
-];
-
-const testimonials = [
-    {
-        testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-        name: "Sara Lee",
-        designation: "CFO",
-        company: "Acme Co",
-        image: "https://randomuser.me/api/portraits/women/4.jpg"
     },
     {
-        testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Rick does.",
-        name: "Chris Brown",
-        designation: "COO",
-        company: "DEF Corp",
-        image: "https://randomuser.me/api/portraits/men/5.jpg"
-    },
-    {
-        testimonial:
-            "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
-        designation: "CTO",
-        company: "456 Enterprises",
-        image: "https://randomuser.me/api/portraits/women/6.jpg"
+        title: "트래포트",
+        company_name: "프론트엔드",
+        icon: starbucks,
+        iconBg: "#ffffff",
+        date: "2024.03 ~ 2024.09",
+        points: [
+            "출장자 검색 API 중복 호출 버그 수정",
+            "정규식 및 Angular Form을 이용하여 예약자 정보 폼 유효성 검증 추가",
+            "숙박 캘린더 호출 시 중복으로 호출되던 데이터 리팩토링 작업"
+        ]
     }
 ];
 
@@ -199,14 +185,13 @@ const opensource = [
         link: "https://morethan-haseung-log.vercel.app/nextjs-kr",
         description: "첫 오픈소스 기여 경험을 블로그로 작성하였습니다.",
         image: nextlogo
+    },
+    {
+        name: "블로그 회고 스터디",
+        link: "https://morethan-haseung-log.vercel.app/nextjs-kr",
+        description: "한 달에 한 번 스터디원들과 경험을 공유합니다.",
+        image: blogThumbnail
     }
 ];
 
-export {
-    services,
-    technologies,
-    experiences,
-    testimonials,
-    projects,
-    opensource
-};
+export { services, technologies, experiences, projects, opensource };

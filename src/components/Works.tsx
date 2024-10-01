@@ -84,17 +84,6 @@ const Works = () => {
             <motion.div variants={textVariant("")}>
                 <h2 className={styles.sectionHeadText}>프로젝트</h2>
             </motion.div>
-            <div className="w-full flex">
-                {/* <motion.p
-                    variants={fadeIn("", 0.1, 1, "")}
-                    className="mt-3 text-white text-[17px] max-w-3xl leading-[30px] bg-red-500"
-                >
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Sapiente beatae quae natus soluta, amet rerum sequi impedit,
-                    dolore, pariatur nisi illo corporis. Dolorum nobis ullam
-                    ipsam rerum explicabo doloremque ducimus!
-                </motion.p> */}
-            </div>
             <div className="mt-20 flex flex-wrap gap-7 ">
                 {projects.map((project, index) => (
                     <ProjectCard
