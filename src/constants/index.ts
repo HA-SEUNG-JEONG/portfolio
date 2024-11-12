@@ -107,31 +107,6 @@ const experiences = [
 
 const projects = [
     {
-        name: "Swap()",
-        description:
-            "트위터, 인스타그램 등의 sns를 하다보면 자신이 원하는 랜덤굿즈를 다른 사람이 소장하고 있거나 해당 굿즈를 다른 굿즈와 교환하고자 하는 경우를 볼 수 있습니다. 프리미엄을 주고 구매하는 등 다른 방법을 통해 얻을 수도 있겠지만, 물물교환의 방식을 통해 굿즈 자체의 가치만을 존중하는 서로 win-win이 될 수 있는 서비스를 한번 만들고 싶어서 swap( )이라는 프로젝트를 기획하게 되었습니다.",
-        tags: [
-            {
-                name: "React",
-                color: "blue-text-gradient"
-            },
-            {
-                name: "TypeScript",
-                color: "green-text-gradient"
-            },
-            {
-                name: "styled-components",
-                color: "pink-text-gradient"
-            },
-            {
-                name: "Recoil",
-                color: "green-text-gradient"
-            }
-        ],
-        image: carrent,
-        source_code_link: "https://github.com/project-swap/swap"
-    },
-    {
         name: "About me",
         description:
             "테오의 스프린트를 통해 5일 동안 기획 및 디자인, 개발과 배포까지 진행한 프로젝트입니다.",
@@ -154,27 +129,6 @@ const projects = [
             }
         ],
         image: aboutme,
-        source_code_link: "https://github.com/taeo-sprint16/frontend"
-    },
-    {
-        name: "랜덤 비밀번호 생성기",
-        description:
-            "개인 프로젝트로, range slider와 정규식 패턴을 이용하여 랜덤으로 비밀번호를 생성하는 도구를 만들었습니다.",
-        tags: [
-            {
-                name: "React",
-                color: "blue-text-gradient"
-            },
-            {
-                name: "TypeScript",
-                color: "green-text-gradient"
-            },
-            {
-                name: "Tailwindcss",
-                color: "pink-text-gradient"
-            }
-        ],
-        image: password,
         source_code_link: "https://github.com/taeo-sprint16/frontend"
     }
 ];
