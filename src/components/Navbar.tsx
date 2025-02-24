@@ -7,6 +7,10 @@ import { logo, menu, close } from "../assets";
 const Navbar = () => {
     const [isActive, setIsActive] = useState("");
     const [isToggle, setIsToggle] = useState(false);
+
+    const handleGithub = () => {
+        window.open("https://github.com/HA-SEUNG-JEONG", "_blank");
+    };
     return (
         <nav
             className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
@@ -28,6 +32,12 @@ const Navbar = () => {
                     <p className="text-white text-[18px] font-bold cursor-pointer">
                         정하승
                     </p>
+                    <button
+                        onClick={handleGithub}
+                        className="bg-gray-500 text-white px-4 py-2 rounded-md ml-4 hover:bg-gray-600"
+                    >
+                        View on Github
+                    </button>
                 </Link>
                 <ul className="list-none hidden sm:flex flex-row gap-10">
                     {navLinks.map((link) => (
