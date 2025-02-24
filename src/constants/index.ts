@@ -7,10 +7,8 @@ import {
     tailwind,
     git,
     starbucks,
-    carrent,
     aboutme,
     nextlogo,
-    password,
     blogThumbnail
 } from "../assets";
 
@@ -83,7 +81,7 @@ const experiences = [
         company_name: "프론트엔드",
         icon: starbucks,
         iconBg: "#ffffff",
-        date: "2023.08 ~ 2024.01",
+        date: "2023.08 ~ 2024.02",
         points: [
             "기존 인라인 스타일이 적용되어있던 부분을 가독성 향상을 위해 컴포넌트 단위의 네이밍 적용",
             "API 처리 과정에서 Toast 컴포넌트를 활용함으로써 사용자 경험 개선",
@@ -111,22 +109,10 @@ const projects = [
         description:
             "테오의 스프린트를 통해 5일 동안 기획 및 디자인, 개발과 배포까지 진행한 프로젝트입니다.",
         tags: [
-            {
-                name: "React",
-                color: "blue-text-gradient"
-            },
-            {
-                name: "TypeScript",
-                color: "green-text-gradient"
-            },
-            {
-                name: "styled-components",
-                color: "pink-text-gradient"
-            },
-            {
-                name: "Recoil",
-                color: "green-text-gradient"
-            }
+            { name: "React" },
+            { name: "TypeScript" },
+            { name: "styled-components" },
+            { name: "Recoil" }
         ],
         image: aboutme,
         source_code_link: "https://github.com/taeo-sprint16/frontend"
@@ -143,7 +129,8 @@ const opensource = [
     {
         name: "블로그 회고 스터디",
         link: "https://morethan-haseung-log.vercel.app/nextjs-kr",
-        description: "한 달에 한 번 스터디원들과 경험을 공유합니다.",
+        description:
+            "한 달에 한 번 스터디원들과 경험을 공유하면서 다른 개발자들과 네트워킹합니다.",
         image: blogThumbnail
     }
 ];
