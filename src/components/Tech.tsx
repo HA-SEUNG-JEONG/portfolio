@@ -12,7 +12,7 @@ const Tech = () => {
             <motion.div variants={textVariant("")}>
                 <h2 className={styles.sectionHeadText}>기술스택</h2>
             </motion.div>
-            <div className="flex flex-row flex-wrap justify-center gap-10 mt-20">
+            <div className="flex flex-row flex-wrap justify-center gap-8 mt-20">
                 {technologies.map((technology) => (
                     <div className="w-28 h-28" key={technology.name}>
                         <BallCanvas icon={technology.icon} />
