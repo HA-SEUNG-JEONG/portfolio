@@ -5,30 +5,33 @@ import {
     css,
     reactjs,
     tailwind,
+    styledcomponents,
     git,
     starbucks,
     aboutme,
+    passwordgenerator,
     nextlogo,
-    blogThumbnail
+    blogThumbnail,
+    sing4u
 } from "../assets";
 
 export const navLinks = [
     {
         id: "#experience",
-        title: "Experience"
+        title: "업무경험"
     },
 
     {
         id: "#project",
-        title: "Project"
+        title: "프로젝트"
     },
     {
         id: "#etc",
-        title: "Etc"
+        title: "기타"
     },
     {
         id: "#contact",
-        title: "Contact"
+        title: "연락처"
     }
 ];
 
@@ -72,6 +75,10 @@ const technologies = [
     {
         name: "git",
         icon: git
+    },
+    {
+        name: "styled-components",
+        icon: styledcomponents
     }
 ];
 
@@ -105,7 +112,7 @@ const experiences = [
 
 const projects = [
     {
-        name: "About me",
+        name: "어바웃미",
         description:
             "테오의 스프린트를 통해 5일 동안 기획 및 디자인, 개발과 배포까지 진행한 프로젝트입니다.",
         tags: [
@@ -116,6 +123,24 @@ const projects = [
         ],
         image: aboutme,
         source_code_link: "https://github.com/taeo-sprint16/frontend"
+    },
+    {
+        name: "비밀번호 생성기",
+        description: "비밀번호 생성기 프로젝트입니다.",
+        tags: [
+            { name: "React" },
+            { name: "TypeScript" },
+            { name: "panda CSS" },
+            { name: "crypto" }
+        ],
+        image: passwordgenerator,
+        source_code_link: "https://github.com/HA-SEUNG-JEONG/password-generator"
+    },
+    {
+        name: "싱포유",
+        description: "싱포유 프로젝트입니다.",
+        tags: [{ name: "React" }],
+        image: sing4u
     }
 ];
 
