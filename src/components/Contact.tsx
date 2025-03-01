@@ -30,7 +30,9 @@ const Contact = () => {
         });
     };
 
-    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    const isFormValid = form.name && form.email && form.message;
+
+    const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setLoading(true);
 
@@ -94,7 +96,7 @@ const Contact = () => {
                             value={form.name}
                             onChange={handleChange}
                             placeholder="이름을 입력해 주세요."
-                            className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                            className="bg-gray-800 p-4 placeholder:text-secondary text-white rounded-lg outline-none border-2 border-gray-500 font-medium"
                         />
                     </label>
                     <label className="flex flex-col">
@@ -107,7 +109,7 @@ const Contact = () => {
                             value={form.email}
                             onChange={handleChange}
                             placeholder="이메일 주소를 입력해주세요."
-                            className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                            className="bg-gray-800 p-4 placeholder:text-secondary text-white rounded-lg outline-none border-2 border-gray-500 font-medium"
                         />
                     </label>
                     <label className="flex flex-col">
@@ -120,13 +122,14 @@ const Contact = () => {
                             value={form.message}
                             onChange={handleChange}
                             placeholder="메시지를 입력해 주세요."
-                            className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                            className="bg-gray-800 p-4 placeholder:text-secondary text-white rounded-lg outline-none border-2 border-gray-500 font-medium"
                         />
                     </label>
 
                     <button
                         type="submit"
-                        className="bg-[#915eff] px-8 py-3  rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
+                        disabled={!isFormValid}
+                        className="bg-[#915eff] px-8 py-3  rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary disabled:bg-gray-500 disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                         {loading ? "Sending..." : "Send"}
                     </button>
