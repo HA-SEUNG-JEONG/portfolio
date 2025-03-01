@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../style";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { menu, close } from "../assets";
 
 const Navbar = () => {
     const [isActive, setIsActive] = useState("");
@@ -24,14 +24,6 @@ const Navbar = () => {
                         window.scrollTo(0, 0);
                     }}
                 >
-                    <img
-                        src={logo}
-                        alt="logo"
-                        className="w-9 h-9 object-contain rounded-xl mr-3"
-                    />
-                    <p className="text-white text-[18px] font-bold cursor-pointer">
-                        정하승
-                    </p>
                     <button
                         onClick={handleGithub}
                         className="bg-gray-500 text-white px-2 py-2 rounded-md ml-4 hover:bg-gray-600 flex items-center gap-2"
