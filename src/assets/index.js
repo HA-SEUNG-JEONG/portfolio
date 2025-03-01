@@ -30,9 +30,11 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 import aboutme from "./aboutme.png";
+import passwordgenerator from "./password-generator.png";
 import nextlogo from "./nextlogo.png";
 import password from "./password.png";
 import blogThumbnail from "./blogThumbnail.png";
+import styledcomponents from "./tech/styledcomponents.png";
 
 export {
     logo,
@@ -66,5 +68,7 @@ export {
     aboutme,
     nextlogo,
     password,
-    blogThumbnail
+    blogThumbnail,
+    passwordgenerator,
+    styledcomponents
 };
