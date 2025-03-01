@@ -10,9 +10,9 @@ interface ProjectCardProps {
     index: number;
     name: string;
     description: string;
-    tags: { name: string; color: string }[];
+    tags: { name: string; color?: string }[];
     image: string;
-    source_code_link: string;
+    source_code_link?: string;
 }
 
 const ProjectCard = ({
@@ -23,6 +23,9 @@ const ProjectCard = ({
     image,
     source_code_link
 }: ProjectCardProps) => {
+    const handleDetailPage = () => {
+        // TODO : 상세 페이지 이동
+    };
     return (
         <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
             <Tilt
@@ -40,20 +43,25 @@ const ProjectCard = ({
                         className="w-full h-full object-contain rounded-3xl"
                     />
 
-                    <div className="absolute inset-0 flex justify-end card-img_hover">
+                    {source_code_link ? (
                         <div
-                            onClick={() =>
-                                window.open(source_code_link, "_blank")
-                            }
-                            className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                            onClick={handleDetailPage}
+                            className="absolute inset-0 flex justify-end card-img_hover"
                         >
-                            <img
-                                src={github}
-                                alt="source code"
-                                className="w-1/2 h-1/2 object-contain"
-                            />
+                            <div
+                                onClick={() =>
+                                    window.open(source_code_link, "_blank")
+                                }
+                                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                            >
+                                <img
+                                    src={github}
+                                    alt="source code"
+                                    className="w-1/2 h-1/2 object-contain"
+                                />
+                            </div>
                         </div>
-                    </div>
+                    ) : null}
                 </div>
 
                 <div className="mt-5">

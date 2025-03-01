@@ -35,6 +35,7 @@ import nextlogo from "./nextlogo.png";
 import password from "./password.png";
 import blogThumbnail from "./blogThumbnail.png";
 import styledcomponents from "./tech/styledcomponents.png";
+import sing4u from "./sing4u.png";
 
 export {
     logo,
@@ -70,5 +71,6 @@ export {
     password,
     blogThumbnail,
     passwordgenerator,
-    styledcomponents
+    styledcomponents,
+    sing4u
 };
