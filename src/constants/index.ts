@@ -91,9 +91,8 @@ const experiences = [
         date: "2023.08 ~ 2024.02",
         points: [
             "기존 인라인 스타일이 적용되어있던 부분을 가독성 향상을 위해 컴포넌트 단위의 네이밍 적용",
-            "API 처리 과정에서 Toast 컴포넌트를 활용함으로써 사용자 경험 개선",
-            "video 객체를 다루면서 겪은 경험에 대해 기록",
-            "Recoil을 사용하면서 겪었던 이슈를 jotai로 바꾸면서 얻은 경험에 대해 기록"
+            "사용자가 폴더에 직접 접근하지 않고도 비디오의 width, height를 확인 가능하게 하기 위해 HTML VideoElement API 적용",
+            "Recoil을 사용하면서 발생한 key 이슈를 jotai를 이용해 해결"
         ]
     },
     {
@@ -126,11 +125,12 @@ const projects = [
     },
     {
         name: "비밀번호 생성기",
-        description: "비밀번호 생성기 프로젝트입니다.",
+        description:
+            "Web Crypto API를 이용하여 비밀번호를 안전하게 생성하고, Have I been Pwned API를 활용하여 비밀번호 해킹 여부를 확인하도록 했습니다.",
         tags: [
             { name: "React" },
             { name: "TypeScript" },
-            { name: "panda CSS" },
+            { name: "Panda CSS" },
             { name: "crypto" }
         ],
         image: passwordgenerator,
@@ -138,9 +138,16 @@ const projects = [
     },
     {
         name: "싱포유",
-        description: "싱포유 프로젝트입니다.",
-        tags: [{ name: "React" }],
-        image: sing4u
+        description:
+            "여러 아티스트들이 팬들로부터 신청 곡을 간편하게 받고 쉽게 관리할 수 있도록 돕는 서비스입니다.",
+        tags: [
+            { name: "React" },
+            { name: "TypeScript" },
+            { name: "Tailwind CSS" },
+            { name: "Context API" }
+        ],
+        image: sing4u,
+        source_code_link: "https://github.com/HA-SEUNG-JEONG/password-generator"
     }
 ];
 
