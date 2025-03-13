@@ -146,8 +146,7 @@ const projects = [
             { name: "Tailwind CSS" },
             { name: "Context API" }
         ],
-        image: sing4u,
-        source_code_link: "https://github.com/HA-SEUNG-JEONG/password-generator"
+        image: sing4u
     }
 ];
 
