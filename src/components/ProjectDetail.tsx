@@ -5,10 +5,63 @@ import { useParams, useNavigate } from "react-router-dom";
 import { fadeIn, textVariant } from "../util/motion";
 import { SectionWrapper } from "../hoc";
 
+interface ProjectContent {
+    troubleShooting?: {
+        problems: string[];
+        results: string[];
+    };
+    collaboration?: {
+        experience: string[];
+        lessons?: string[];
+    };
+}
+
+const projectContents: Record<string, ProjectContent> = {
+    "비밀번호 생성기": {
+        troubleShooting: {
+            problems: [
+                "초기에는 Math.random() 함수를 사용하여 비밀번호를 생성했으나, 이 방식이 암호학적으로 안전하지 않다는 것을 알게 되었습니다. 보안성을 높이기 위한 방법을 리서치한 결과, 브라우저에 내장된 Web Crypto API가 암호학적으로 더 안전한 난수를 생성할 수 있음을 확인했습니다. ",
+                "생성된 비밀번호의 보안 수준을 검증하기 위해 Have I Been Pwned API를 활용하여 해킹 여부를 판단하는 기능을 추가하기로 했습니다."
+            ],
+            results: [
+                "Web Crypto API를 사용하여 비밀번호 생성 알고리즘을 개선함으로써 보안성을 크게 강화했습니다. ",
+                "ARIA 속성을 추가로 적용하여 웹 접근성을 개선했으며, 이로 인해 Lighthouse의 접근성 점수가 83점에서 95점으로 향상되었습니다."
+            ]
+        }
+    },
+    어바웃미: {
+        collaboration: {
+            experience: [
+                "아이디어 토의 및 기획 및 개발, 배포까지 진행",
+                "사용자 행동을 기반으로 업무 분배"
+            ],
+            lessons: [
+                "짧은 기간 동안 기획자 및 디자이너와 협업하는 과정에서 어떻게 소통해야 하는 지 배울 수 있었습니다.",
+                "사용자 기반 데이터와 스키마 기반 데이터를 이용해 효율적으로 업무 분배 및 업무 진행도를 확인할 수 있었습니다."
+            ]
+        }
+    },
+    싱포유: {
+        troubleShooting: {
+            problems: [
+                "Context API를 활용한 전역 상태 관리 구현",
+                "실시간 신청곡 목록 업데이트 및 상태 관리",
+                "아티스트와 팬의 효율적인 데이터 연동 처리"
+            ],
+            results: [
+                "Context API를 통한 효율적인 상태 관리로 컴포넌트 간 데이터 공유 개선",
+                "실시간으로 업데이트되는 신청곡 목록으로 사용자 경험 향상",
+                "아티스트와 팬 간의 원활한 소통 창구 구축"
+            ]
+        }
+    }
+};
+
 const ProjectDetail = () => {
     const { id } = useParams();
     const navigate = useNavigate();
     const project = projects.find((p) => p.name === id);
+    const content = id ? projectContents[id] : null;
 
     if (!project) {
         return <div>프로젝트를 찾을 수 없습니다.</div>;
@@ -46,17 +99,93 @@ const ProjectDetail = () => {
                         <h3 className="text-white font-bold text-[24px]">
                             사용 기술
                         </h3>
-                        <div className="mt-4 flex flex-wrap gap-2">
-                            {project.tags.map((tag) => (
-                                <p
-                                    key={`${project.name}-${tag.name}`}
-                                    className={`text-[14px] ${tag.color}`}
-                                >
-                                    #{tag.name}
-                                </p>
+                        <div className="mt-4 text-secondary text-[16px]">
+                            {project.tags.map((tag, index) => (
+                                <span key={`${project.name}-${tag.name}`}>
+                                    {tag.name}
+                                    {index < project.tags.length - 1 && ", "}
+                                </span>
                             ))}
                         </div>
                     </div>
+
+                    {content?.troubleShooting && (
+                        <>
+                            <div className="mt-8">
+                                <h3 className="text-white font-bold text-[24px]">
+                                    문제 해결
+                                </h3>
+                                <ul className="mt-4 list-disc pl-5">
+                                    {content.troubleShooting.problems.map(
+                                        (problem, index) => (
+                                            <li
+                                                key={index}
+                                                className="text-secondary text-[16px] mb-2"
+                                            >
+                                                {problem}
+                                            </li>
+                                        )
+                                    )}
+                                </ul>
+                            </div>
+                            <div className="mt-8">
+                                <h3 className="text-white font-bold text-[24px]">
+                                    적용 결과
+                                </h3>
+                                <ul className="mt-4 list-disc pl-5">
+                                    {content.troubleShooting.results.map(
+                                        (result, index) => (
+                                            <li
+                                                key={index}
+                                                className="text-secondary text-[16px] mb-2"
+                                            >
+                                                {result}
+                                            </li>
+                                        )
+                                    )}
+                                </ul>
+                            </div>
+                        </>
+                    )}
+
+                    {content?.collaboration && (
+                        <>
+                            <div className="mt-8">
+                                <h3 className="text-white font-bold text-[24px]">
+                                    협업 경험
+                                </h3>
+                                <ul className="mt-4 list-disc pl-5">
+                                    {content.collaboration.experience.map(
+                                        (exp, index) => (
+                                            <li
+                                                key={index}
+                                                className="text-secondary text-[16px] mb-2"
+                                            >
+                                                {exp}
+                                            </li>
+                                        )
+                                    )}
+                                </ul>
+                            </div>
+                            <div className="mt-8">
+                                <h3 className="text-white font-bold text-[24px]">
+                                    협업에서 얻은 점
+                                </h3>
+                                <ul className="mt-4 list-disc pl-5">
+                                    {content.collaboration.lessons?.map(
+                                        (lesson, index) => (
+                                            <li
+                                                key={index}
+                                                className="text-secondary text-[16px] mb-2"
+                                            >
+                                                {lesson}
+                                            </li>
+                                        )
+                                    )}
+                                </ul>
+                            </div>
+                        </>
+                    )}
 
                     {project.source_code_link && (
                         <div className="mt-8">
