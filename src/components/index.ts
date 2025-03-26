@@ -10,7 +10,7 @@ import About from "./About";
 import Tech from "./Tech";
 import Experience from "./Experience";
 import Works from "./Works";
-
+import ProjectDetail from "./ProjectDetail";
 import Contact from "./Contact";
 import Etc from "./Etc";
 
@@ -21,6 +21,7 @@ export {
     Tech,
     Experience,
     Works,
+    ProjectDetail,
     Contact,
     EarthCanvas,
     BallCanvas,
