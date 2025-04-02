@@ -54,6 +54,18 @@ const projectContents: Record<string, ProjectContent> = {
                 "아티스트와 팬 간의 원활한 소통 창구 구축"
             ]
         }
+    },
+    "칸반 투두리스트": {
+        troubleShooting: {
+            problems: [
+                "dnd-kit 라이브러리를 이용하여 구현했지만, 기능에 비해 번들 사이즈가 상대적으로 크다는 것을 알게 되었습니다.",
+                "모바일 환경에서 드래그앤드롭 시 불필요한 드래그가 되는 이슈를 겪었습니다."
+            ],
+            results: [
+                "HTML5의 Drag and Drop API의 dataTransfer 객체를 활용하여 드래그앤드롭 기능을 직접 구현하여 번들 사이즈를 16% 가량 줄였습니다.",
+                "드래그가 되는 현상을 방지하기 위해 롱프레스 이벤트를 이용하여 자연스러운 드래그앤드롭이 되도록 했습니다."
+            ]
+        }
     }
 };
 

@@ -5,14 +5,14 @@ import {
     css,
     reactjs,
     tailwind,
-    styledcomponents,
     git,
     starbucks,
     aboutme,
     passwordgenerator,
     nextlogo,
     blogThumbnail,
-    sing4u
+    sing4u,
+    kanban
 } from "../assets";
 
 export const navLinks = [
@@ -75,10 +75,6 @@ const technologies = [
     {
         name: "git",
         icon: git
-    },
-    {
-        name: "styled-components",
-        icon: styledcomponents
     }
 ];
 
@@ -150,9 +146,18 @@ const projects = [
             { name: "Context API" }
         ],
         image: sing4u
+    },
+    {
+        name: "칸반 투두리스트",
+        description: "칸반 형태의 투두리스트",
+        tags: [
+            { name: "React" },
+            { name: "TypeScript" },
+            { name: "Tailwind CSS" }
+        ],
+        image: kanban
     }
 ];
-
 const opensource = [
     {
         name: "Nextjs.kr 한글 번역 기여",

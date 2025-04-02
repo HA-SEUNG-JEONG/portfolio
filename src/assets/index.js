@@ -19,6 +19,7 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import kanban from "./kanban.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -34,7 +35,6 @@ import passwordgenerator from "./password-generator.png";
 import nextlogo from "./nextlogo.png";
 import password from "./password.png";
 import blogThumbnail from "./blogThumbnail.png";
-import styledcomponents from "./tech/styledcomponents.png";
 import sing4u from "./sing4u.png";
 
 export {
@@ -71,6 +71,6 @@ export {
     password,
     blogThumbnail,
     passwordgenerator,
-    styledcomponents,
-    sing4u
+    sing4u,
+    kanban
 };
