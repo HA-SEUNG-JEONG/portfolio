@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { styles } from "../style";
-import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../util/motion";
@@ -11,7 +10,7 @@ interface ProjectCardProps {
     name: string;
     description: string;
     tags: { name: string; color?: string }[];
-    image: string;
+    image?: string;
     source_code_link?: string;
 }
 
